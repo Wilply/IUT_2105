@@ -1,11 +1,11 @@
 #script de creation et d'initialisation de la base de donnée
 #pour lancer le script: source init_db.sql
 
-DROP DATABASE IF EXISTS site_db;
+DROP DATABASE IF EXISTS db_clecoq001;
 
-CREATE DATABASE site_db;
+CREATE DATABASE db_clecoq001;
 
-USE site_db;
+USE db_clecoq001;
 
 DROP TABLE IF EXISTS users;
 
