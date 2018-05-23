@@ -1,0 +1,8 @@
+A CHAQUE FOIS QUE VOUS COMMENDER A CODER:
+git fetch
+
+UNE FOIS QUE VOUS AVEZ FINIS DE CODER OU REGULIEREMENT:
+
+git add .
+git commit -m "les mofication qui ont été faites"
+git push origin master
