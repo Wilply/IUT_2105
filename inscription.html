@@ -6,27 +6,27 @@
       <title> Inscription </title>
       <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	  </head>
-      <body style="background-color: #BBD2E1;">
+      <body class="backgroud">
         <div class="login_div">
-          <div class:"">
-            <u><h1>Inscripition</h1></u>
-              <form>
+          <div class="login_head">
+            <u><h1>Inscription</h1></u>
           </div>
-          <div class:"">
-            Nom:<br>
-            <input type="text" name="nom"><br>
-            Prénom:<br>
-            <input type="text" name="prenom"><br>
-            Nom d'utilisateur:<br>
-            <input type="text" name="input_login" class="login_input_field" size="30" placeholder="Nom d'utilisateur" autofocus required><br>
-            Mot de passe:<br>
-            <input type="Password" name="input_password" class="login_input_field" size="30" placeholder="Mot de passe" required ><br>
-            <input type="Password" name="input_password" class="login_input_field" size="30" placeholder="Retapez le Mot de passe" required ><br>
-            Adresse Email:<br>
-            <input type="text" name="input_email" class="login_input_field" size="30" placeholder="Email" required ><br>
-            <input type="text" name="input_confirmemail" class="login_input_field" size="30" placeholder="Confirmez l'adresse Email" required >
-          </div>
-          <div class:"">
+          <form>
+              <div class="login_input">
+                Nom:<br>
+                <input type="text" name="nom" class="login_input_field" placeholder="Nom d'utilisateur" autofocus required><br>
+                Prénom:<br>
+                <input type="text" name="prenom" class="login_input_field" placeholder="Nom d'utilisateur" autofocus required><br>
+                Nom d'utilisateur:<br>
+                <input type="text" name="input_login" class="login_input_field" placeholder="Nom d'utilisateur" autofocus required><br>
+                Mot de passe:<br>
+                <input type="Password" name="input_password" class="login_input_field" placeholder="Mot de passe" required ><br>
+                <input type="Password" name="input_password" class="login_input_field" placeholder="Retapez le Mot de passe" required ><br>
+                Adresse Email:<br>
+                <input type="text" name="input_email" class="login_input_field" size="30" placeholder="Email" required ><br>
+                <input type="text" name="input_confirmemail" class="login_input_field" size="30" placeholder="Confirmez l'adresse Email" required >
+            </div>
+          <div class="login_feet">
             <button type="button" onclick="alert('Votre inscription a bien été enregistrée !')">Valider l'inscription</button>
               </form>
           </div>
