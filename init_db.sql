@@ -1,4 +1,4 @@
-#script de creation et d'initialisation de la base de donnée
+#script de creation et d initialisation de la base de donnée
 #pour lancer le script: source init_db.sql
 
 DROP DATABASE IF EXISTS db_clecoq001;
@@ -18,7 +18,7 @@ CREATE TABLE users(
   user_mail VARCHAR(50) NOT NULL,
   user_is_admin BOOLEAN NOT NULL);
 
-#ajout d'un utilisateur administrateur pour la 1er connexion
+#ajout d un utilisateur administrateur pour la 1er connexion
 INSERT INTO users VALUES(0,"root","none","none","toto","root@email.fr",true);
 
 DROP TABLE IF EXISTS products;
@@ -29,5 +29,18 @@ CREATE TABLE products (
   producs_price DECIMAL(8,2) NOT NULL,
   product_short_description TEXT,
   product_description TEXT);
+
+DROP TABLE IF EXISTS categories;
+
+CREATE TABLE categories (
+  cat_id INT NOT NULL,
+  cat_name VARCHAR(50) NOT NULL);
+
+DROP TABLE IF EXISTS sub_categories;
+
+CREATE TABLE sub_categories (
+    subcat_id INT NOT NULL,
+    subcat_name VARCHAR(50) NOT NULL,
+    subcat_parent_id INT);
 
 COMMIT;
