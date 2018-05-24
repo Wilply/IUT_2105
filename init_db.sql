@@ -14,7 +14,7 @@ CREATE TABLE users(
   user_login VARCHAR(10) NOT NULL,
   user_name VARCHAR(30) NOT NULL,
   user_surname VARCHAR(40) NOT NULL,
-  user_password VARCHAR(40) NOT NULL,
+  user_password VARCHAR(100) NOT NULL,
   user_mail VARCHAR(50) NOT NULL,
   user_is_admin BOOLEAN NOT NULL,
   CONSTRAINT users_key PRIMARY KEY(user_id)
@@ -22,7 +22,7 @@ CREATE TABLE users(
 
 #ajout d un utilisateur administrateur pour la 1er connexion
 INSERT INTO users (user_login, user_name, user_surname, user_password, user_mail, user_is_admin)
- VALUES ("root","none","none","toto","root@email.fr",true);
+ VALUES ("root","none","none","$2y$10$e0dmaJN52NRuH/c7FYW6teTZiagUEm7/4BLfxr0WLBbQuuj1uPdTa","root@email.fr",true);
 
 DROP TABLE IF EXISTS products;
 
