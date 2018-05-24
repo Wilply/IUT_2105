@@ -27,6 +27,22 @@
 		}
 	};
 
+	function test_login_mail($login, $mail, $db) {
+		$isOk = true;
+		$req_login = "SELECT user_login FROM users WHERE user_login=\"".$login."\"";
+		$req_mail = "SELECT user_mail FROM users WHERE user_mail=\"".$mail."\"";
+		$row_login = mysqli_num_rows(mysqli_query($db, $req_login));
+		$row_mail = mysqli_num_rows(mysqli_query($db, $req_mail));
+		#echo "<Br>mail :".$row_mail;
+		#echo "<Br>login :".$row_login;
+		if (($row_login + $row_mail) > 0) {
+			$isOk = false;
+			#echo '<Br>il ya sup 0';
+		};
+		#echo $isOk ? 'true' : 'false';
+		return $isOk;
+	}
+
 	$isOk = true;
 
 	$db_connect = mysqli_connect("localhost", "toto", "totopwd", "db_clecoq001");
@@ -45,17 +61,22 @@
 
 	if($password != $confirm_password) {
 		$isOk = false;
+		#echo "<Br>2 pass diff";
 	} elseif ($email != $confirm_email) {
 		$isOk = false;
-	};
+		#echo "<Br>2 mail diff";
+	} elseif (!test_login_mail($login, $email, $db_connect)) {
+		$isOk = false;
+		#echo "<Br>mail or login already exist in db";
+	}
 
 	if($isOk) {
-		$isOk = insert_db($login, $nom, $prenom, $password, $email, $db_connect);
-		#echo 'insert succesful';
+		insert_db($login, $nom, $prenom, $password, $email, $db_connect);
+		#echo '<Br>insert succesful';
 		header('Location: succes.html');
 		exit();
 	} else {
-		#echo 'insert failed';
+		#echo '<Br>insert failed';
 		header('Location: fail.html');
 		exit();
 	};
