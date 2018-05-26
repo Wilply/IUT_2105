@@ -4,10 +4,10 @@
 	  <head>
       <meta name="viewport" content="width=device-width, initial-scale=1"charset="utf-8">
       <title> Inscription </title>
-      <link rel="stylesheet" type="text/css" href="stylesheet_inscription.css">
+      <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	  </head>
       <body class="backgroud">
-        <div class="login_div">
+        <div class="login_div_inscription">
           <div class="login_head">
             Inscription
           </div>
