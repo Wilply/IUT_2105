@@ -2,7 +2,7 @@
 <html>
 
 	  <head>
-      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1"charset="utf-8">
       <title> Inscription </title>
       <link rel="stylesheet" type="text/css" href="stylesheet_inscription.css">
 	  </head>
@@ -13,15 +13,20 @@
           </div>
           <div class="error_div">
             <?php
+            if (!isset($_GET['error_code'])) {
+              echo '<Br>';
+            }
             if(isset($_GET['error_code'])) {
               if(addcslashes($_GET['error_code'], '%_') == 1) {
                 echo "Vous avez entré 2 mot de passe differents";
               } elseif(addcslashes($_GET['error_code'], '%_') == 2) {
-                echo "Vous avez entré 2 mot de passes differents";
+                echo "Vous avez entré 2 addresses emails differentes";
               } elseif(addcslashes($_GET['error_code'], '%_') == 3) {
                 echo "<Br>Ce pseudo est déja utilisée";
               } elseif(addcslashes($_GET['error_code'], '%_') == 4) {
                 echo "Cette adresse email est déjà enregistrée";
+              } else {
+                echo '<Br>';
               }
             }
             ?>
@@ -38,8 +43,8 @@
                 <input type="Password" name="password" class="login_input_field" placeholder="Mot de passe" required ><br>
                 <input type="Password" name="confirm_password" class="login_input_field" placeholder="Retapez le Mot de passe" required ><br>
                 Adresse Email:<br>
-                <input type="email" name="email" class="login_input_field" size="30" placeholder="Email" required ><br>
-                <input type="email" name="confirm_email" class="login_input_field" size="30" placeholder="Confirmez l'adresse Email" required >
+                <input type="email" name="email" class="login_input_field_mail" placeholder="Email" required ><br>
+                <input type="email" name="confirm_email" class="login_input_field_mail" placeholder="Confirmez l'adresse Email" required >
             </div>
           <div class="login_feet">
             <input type="submit" name="sign up">
