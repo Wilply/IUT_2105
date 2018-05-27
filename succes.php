@@ -1,3 +1,5 @@
+<?php session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +9,7 @@
 </head>
 <body>
 	<h1>INSERT DANS LA DB SUCCES OU LOGIN REUSSI</h1>
-	
+	<?php echo $_SESSION['login'];
+	?>
 </body>
 </html>

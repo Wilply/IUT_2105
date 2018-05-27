@@ -1,4 +1,7 @@
 <?php
+	session_start();
+	
+
 	function secure_input($string, $db) {
 		$string = mysqli_real_escape_string($db, $string);
         $string = addcslashes($string, '%_');

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE >
 <html>
 <head>
@@ -13,8 +14,14 @@
 				<input type="text" name="search" class="search_input">
 				<button type="submit" class="search_button"></button>
 			</form>
-				<form class="connexion" method="post" action="connexion.php"><input form="connexion_form" type="submit" value="connexion"></form>
-				<form id="inscription_button" class="connexion" method="post" action="inscription.php"><input form="inscription_form" type="submit" value="inscription"></form>
+			<?php
+				if(!isset($_SESSION['login'])) { ?>
+					<form class="connexion" method="post" action="connexion.php"><input type="submit" value="connexion"></form>
+					<form id="inscription_button" class="connexion" method="post" action="inscription.php"><input type="submit" value="inscription"></form>
+				<?php } else {
+					echo "toto";
+				};
+			?>
 		</div>
 		<div class="corp">
 			<div class="menu">

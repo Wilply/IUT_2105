@@ -1,5 +1,7 @@
 <?php
 	
+    session_start();
+
 	function secure_input($string, $db) {
 		$string = mysqli_real_escape_string($db, $string);
         $string = addcslashes($string, '%_');
@@ -25,6 +27,12 @@
 
     $req_login = "SELECT user_login FROM users WHERE user_login=\"".$login."\"";
     $req_password = "SELECT user_password FROM users WHERE user_login=\"".$login."\"";
+
+
+    $req_isAdmin = "SELECT user_is_admin FROM users WHERE user_login=\"".$login."\"";
+    $req_nom = "SELECT user_name FROM users WHERE user_login=\"".$login."\"";
+    $req_prenom = "SELECT user_surname FROM users WHERE user_login=\"".$login."\"";
+
     $row_login = mysqli_num_rows(mysqli_query($db_connect, $req_login));
     $db_password = mysqli_fetch_array(mysqli_query($db_connect, $req_password))[0];
 
@@ -39,7 +47,10 @@
     }
 
     if ($isOk) {
-    	header("Location: succes.html");
+        $_SESSION['login'] = $login;
+        $_SESSION['nom'] = $login;
+        $_SESSION['prenom'] = $login;
+    	header("Location: succes.php");
     	#echo 'OK';
     } else {
     	header("Location: connexion.php?error_code=".$error_code);
