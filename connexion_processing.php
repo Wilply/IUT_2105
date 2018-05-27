@@ -36,6 +36,9 @@
     $row_login = mysqli_num_rows(mysqli_query($db_connect, $req_login));
     $db_password = mysqli_fetch_array(mysqli_query($db_connect, $req_password))[0];
 
+    $nom = mysqli_fetch_array(mysqli_query($db_connect, $req_nom))[0];
+    $prenom = mysqli_fetch_array(mysqli_query($db_connect, $req_prenom))[0];
+
 
 
     if ($row_login != 1) {
@@ -48,9 +51,9 @@
 
     if ($isOk) {
         $_SESSION['login'] = $login;
-        $_SESSION['nom'] = $login;
-        $_SESSION['prenom'] = $login;
-    	header("Location: succes.php");
+        $_SESSION['nom'] = $nom;
+        $_SESSION['prenom'] = $prenom;
+    	header("Location: index.php");
     	#echo 'OK';
     } else {
     	header("Location: connexion.php?error_code=".$error_code);
