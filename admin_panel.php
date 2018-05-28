@@ -29,9 +29,9 @@
 					 </div>
 				</div>
 			</div>
-		<div class="corp">
+		<div class="corps">
 			<div class="menu">
-				<div class="prim_cat">
+				<div id="first_prim" class="prim_cat">
 					<p class="prim_text">INFO</p>
 				</div>
 				<div class="prim_cat">
@@ -57,9 +57,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="article">
-				
-			</div>
+			<?php include 'info.php'; ?>
 		</div>
 		<div class="footer">
 			
