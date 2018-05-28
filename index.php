@@ -25,7 +25,7 @@
 						 	<?php echo $_SESSION['prenom']." ".$_SESSION['nom']; ?>
 						 </p>
 						 <div class="menu_content">
-						 	<a href="">Gestion du compte</a>
+						 	<a href="admin_panel.php">Gestion du compte</a>
 						 	<a href="disconnect.php">Se deconnecter</a>
 						 </div>
 					</div>
