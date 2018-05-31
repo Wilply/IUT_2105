@@ -1,5 +1,5 @@
 <?php
-	
+
     session_start();
 
 	function secure_input($string, $db) {
@@ -15,7 +15,7 @@
 	#1 : LE LOGIN N EXISTE PAS DANS LA DB (ou il existe en 2 exemplaire mais wtf)
 	#2 : LE MDP NE CORRESPOND PAS
 
-	$db_connect = mysqli_connect("localhost", "toto", "totopwd", "db_clecoq001");
+	$db_connect = mysqli_connect("localhost", "u_clecoq001", "YwYL3tnj", "db_clecoq001");
 	if (!$db_connect) {
 		#echo "Connot connect to mysql server";
 		$isOk =  false;
@@ -59,4 +59,3 @@
     	header("Location: connexion.php?error_code=".$error_code);
     	#echo 'PAS OK';
     }
-

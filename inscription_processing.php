@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	
+
 
 	function secure_input($string, $db) {
 		$string = mysqli_real_escape_string($db, $string);
@@ -25,7 +25,7 @@
 			echo "<Br>";
 			$data = mysqli_fetch_array($res);
 			for ($j = 0; $j < 7; $j++) {
-				echo $data[$j]."		";	
+				echo $data[$j]."		";
 			}
 		}
 	};
@@ -65,7 +65,7 @@
 	#3 : PSEUDO DEJA UTILISE
 	#4 : EMAIL DEJA UTILISE
 
-	$db_connect = mysqli_connect("localhost", "toto", "totopwd", "db_clecoq001");
+	$db_connect = mysqli_connect("localhost", "u_clecoq001", "YwYL3tnj", "db_clecoq001");
 	if (!$db_connect) {
 		#echo "Connot connect to mysql server";
 		$isOk =  false;
