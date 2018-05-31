@@ -1,4 +1,4 @@
-<?php session_start(); 
+<?php session_start();
 	if (!isset($_SESSION['login'])) {
 		header("Location: /");
 	};
@@ -19,10 +19,10 @@
 				<button type="submit" class="search_button"></button>
 			</form>
 				<div class="connected">
-					 <p class="connected_text"> 
+					 <div class="connected_text">
 					 	Bienvenue <Br>
 					 	<?php echo $_SESSION['prenom']." ".$_SESSION['nom']; ?>
-					 </p>
+					</div>
 					 <div class="menu_content">
 					 	<a href="">Gestion du compte</a>
 					 	<a href="disconnect.php">Se deconnecter</a>
@@ -60,7 +60,7 @@
 			<?php include 'info.php'; ?>
 		</div>
 		<div class="footer">
-			
+
 		</div>
 	</div>
 </body>
