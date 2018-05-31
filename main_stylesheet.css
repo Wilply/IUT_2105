@@ -16,7 +16,7 @@
 /*PRODUCT_ADD*/
 .add_prod {
 	padding-left: 5%;
-	padding-top: 5%;
+	padding-top: 4%;
 	padding-right: 8%;
 
 }
@@ -25,7 +25,7 @@
 	background-color: #FFFFFF;
 	position: absolute;
 	width: 46vh;
-	height: 57vh;
+	height: 45vh;
 	min-width: 300px;
 	min-height: 570px;
   top: 45%;
@@ -37,6 +37,25 @@
   flex-direction: column;
 }
 
+.login_head {
+	text-align: left;
+	padding-left: 8%;
+	padding-top: 5%;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.description {
+	padding-left: 5%;
+	padding-top: 4%;
+}
+
+.login_feet {
+
+	justify-content: flex-end;
+	padding-right: 8%;
+}
 /*FIN PRODUCT_ADD*/
 
 .header {
