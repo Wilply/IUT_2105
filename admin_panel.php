@@ -1,6 +1,6 @@
 <?php session_start();
 	if (!isset($_SESSION['login'])) {
-		header("Location: /");
+		header("Location: ./");
 	};
 ?>
 <!DOCTYPE >
@@ -41,7 +41,7 @@
 					</div>
 				</div>
 			</div>
-			<?php include 'info.php'; ?>
+			<?php include 'produit_add.html'; ?>
 		</div>
 		<div class="footer">
 

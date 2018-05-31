@@ -41,7 +41,7 @@
 				</div>
 			</div>
 			<div class="article">
-
+				<?php include 'article_processing.php'; ?>
 			</div>
 		</div>
 		<div class="footer">
