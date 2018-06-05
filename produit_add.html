@@ -1,5 +1,5 @@
     <div class="login_addprod">
-      <form>
+      <form method="post" action="add_article.php" enctype="multipart/form-data">
         <div class="login_head">
           Ajout d'article
         </div>
@@ -9,15 +9,19 @@
         </div>
         <div class="add_prod">
           Prix du produit :<br>
-          <input type="number" step="1" name="PrixProd" placeholder="Prix du Produit" autofocus required><br>
+          <input type="number" step="0.5" name="PrixProd" placeholder="Prix du Produit" required><br>
         </div>
         <div class="description">
           Description brève (200 caractères max):<br>
-          <textarea rows="4" cols="55" maxlenth="200" autofocus></textarea><br>
+          <textarea rows="4" name="ShortDescri" cols="55" maxlenth="200" required></textarea><br>
         </div>
         <div class="description">
           Description détaillée :<br>
-          <textarea rows="10" cols="55" maxlenth="1500" autofocus></textarea><br>
+          <textarea rows="10" name="Descri" cols="55" maxlenth="1500" required></textarea><br>
+        </div>
+        <div class="input_img">
+          Image du Produit<Br>
+          <input type="file" name="img_link" value="image">
         </div>
         <div class="login_feet">
           <input type="submit" value="Valider">

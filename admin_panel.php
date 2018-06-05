@@ -21,27 +21,44 @@
 				<div class="prim_cat">
 					<p class="prim_text">PRODUITS</p>
 					<div class="sub_cat">
-						<a href="">GERER</a>
-						<a href="">AJOUTER</a>
-						<a href="">SUPPRIMER</a>
+						<a href="./admin_panel.php?page=#">GERER</a>
+						<a href="./admin_panel.php?page=1">AJOUTER</a>
+						<a href="./admin_panel.php?page=#">SUPPRIMER</a>
 					</div>
 				</div>
 				<div class="prim_cat">
 					<p class="prim_text">CATEGORIES</p>
 					<div class="sub_cat">
-						<a href="">AJOUTER</a>
-						<a href="">SUPPRIMER</a>
+						<a href="./admin_panel.php?page=#">AJOUTER</a>
+						<a href="./admin_panel.php?page=#">SUPPRIMER</a>
 					</div>
 				</div>
 				<div class="prim_cat">
 					<p class="prim_text">USERS</p>
 					<div class="sub_cat">
-						<a href="">AJOUTER</a>
-						<a href="">SUPPRMIER</a>
+						<a href="./admin_panel.php?page=#">AJOUTER</a>
+						<a href="./admin_panel.php?page=#">SUPPRMIER</a>
 					</div>
 				</div>
 			</div>
-			<?php include 'produit_add.html'; ?>
+			<?php
+			if (isset($_GET['page'])) {
+				switch ($_GET['page']) {
+					case 1:
+						include 'produit_add.html';
+						break;
+					case 'value':
+
+						break;
+
+					default:
+						include 'info.php';
+						break;
+				}
+			} else {
+				include 'info.php';
+			};
+			 ?>
 		</div>
 		<div class="footer">
 

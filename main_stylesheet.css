@@ -13,7 +13,7 @@
 	top: 0%;
 	left: 0%;
 }
-/*PRODUCT_ADD*/
+/* #### PRODUCT_ADD* #### */
 .add_prod {
 	padding-left: 5%;
 	padding-top: 4%;
@@ -28,7 +28,7 @@
 	/*width: 38%;
 	height: 50%;*/
 	width: 450px;
-	height: 570px;
+	height: 610px;
   top: 45%;
   left: 59%;
   /*transform: translate(-50%, -40%);*/
@@ -58,7 +58,12 @@
 	padding-right: 4%;
 	padding-top: 5%;
 }
-/*FIN PRODUCT_ADD*/
+
+.input_img {
+	padding-left: 5%;
+	padding-top: 3%;
+}
+/* #### FIN PRODUCT_ADD* #### */
 
 .header {
 	display: flex;
