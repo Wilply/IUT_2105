@@ -22,15 +22,16 @@
 }
 
 .login_addprod {
+	margin: 3%;
 	background-color: #FFFFFF;
-	position: absolute;
-	width: 46vh;
-	height: 45vh;
-	min-width: 300px;
-	min-height: 570px;
+	position: flex;
+	/*width: 38%;
+	height: 50%;*/
+	width: 450px;
+	height: 570px;
   top: 45%;
-  left: 50%;
-  transform: translate(-50%, -40%);
+  left: 59%;
+  /*transform: translate(-50%, -40%);*/
   box-shadow: 5px 5px 10px;
   border-radius: 5px;
   padding: 5px;
