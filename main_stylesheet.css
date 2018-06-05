@@ -269,13 +269,13 @@
 
 /* #### ARTICLE #### */
 .article {
+	flex: 1;
 	background-color: #146845;
-	height: 10%;
-	/*min-width: 200px;*/
-	width: 20%;
-	/*max-width: 250px;
+	height: 14%;
+	width: 75%;
 	margin: 2%;
-	margin-left: 0.5%;
+	margin-right: 5%;
+	/*margin-left: 0.5%;
 	border-style: none;
 	border-width: 0px;
 	display: flex;
@@ -285,6 +285,8 @@
 }
 
 .article_list_left {
-
+	height: 100%;
+	width: 20%;
+	max-width: 180px;
 }
 /* #### ARTICLE #### */
