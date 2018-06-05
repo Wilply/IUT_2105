@@ -12,14 +12,14 @@
 	width: 46vh;
 	height: 45vh;
 	min-width: 300px;
-	min-height: 570px;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-  box-shadow: 5px 5px 10px;
-  border-radius: 5px;
-  padding: 5px;
-  flex-direction: column;
+	min-height: 800px;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -40%);
+  	box-shadow: 5px 5px 10px;
+ 	 border-radius: 5px;
+ 	 padding: 5px;
+  	flex-direction: column;
 }
 
 .cat_head {
