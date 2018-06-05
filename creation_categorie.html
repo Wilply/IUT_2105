@@ -1,22 +1,18 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
   <title>Categorie</title>
-  <link rel ="stylesheet" href="categorie.css" />
+  <link rel ="stylesheet" href="sub_cat.css" />
 </head>
 
 <body class="background">
   <div class="login_addcat">
-    <form>
+    <form class="cat">
       <div class="cat_head">
         Ajout de catégorie
       </div>
       <div class="add_cat">
-        nom de la catégorie :<br>
-        <input type="text" class="Nomcat" size="15"/>
-      </div>
-      <div class="add_cat">
-        numero de la référence :<br>
-        <input type="number" class="Numcat" size="15"/>
+        identifiant de la catégorie :<br>
+        <input type="text" class="Nom_cat" size="25"/>
       </div>
       <div class="description">
         Déscritpion brève (200 caractères max) :<br>
@@ -29,6 +25,22 @@
       <div class="submit_feet">
           <input type="submit" value="Valider"/>
       </div>
-    </div>
-  </form>
+    </form>
+    <form class="sub">
+      <div class="cat_head">
+        Ajout de sous catégorie
+      </div>
+      <div class="add_cat">
+        identifiant de la sous catégorie : <br>
+        <input type="text" class="Nom_sub" size="25"/>
+      </div>
+      <div class="add_cat">
+        identifiant de la catégorie parente : <br>
+        <input type="text" class="parent_cat" size="25"/>
+      </div>
+      <div class="submit_feet">
+        <input type="submit" value="Valider"/>
+      </div>
+    </form>
+  </div>
 </body>
