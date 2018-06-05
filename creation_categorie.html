@@ -1,22 +1,30 @@
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
   <title>Categorie</title>
-  <link rel ="stylesheet" href="stylesheet_index.css" />
+  <link rel ="stylesheet" href="categorie.css" />
 </head>
-<body>
-<form action="" method="post">
-<div class="cat_div">
-  <div class="nm_cat_div">
-    nom de la cat&eacute;gorie :
-    <input type="text" class="nm_cat_bar" size="15"/>
-  </div><br>
-  <div class="ref_cat_div">
-    r&eacute;f&eacute;rence de la cat&eacute;gorie :
-    <input type="text" chass="ref_cat_bar" size="15"/>
-  </div>
-  <br>
-  <div class="sub_cat_div">
-    <input type="submit" class="cat_btn" value="Categorie"/>
-  </div>
-  </div>
-</form>
+
+<body class="background">
+  <div class="login_addcat">
+    <form>
+      <div class="cat_head">
+        Ajout de catégorie
+      </div>
+      <div class="add_cat">
+        nom de la catégorie :<br>
+        <input type="text" class="Nomcat" size="15"/>
+      </div>
+      <div class="description">
+        Déscritpion brève (200 caractères max) :<br>
+        <textarea rows="4" cols="55" maxlength="200" autofocus></textarea><br>
+      </div>
+      <div class="description">
+        Déscription détaillé de la catégorie :<br>
+        <textarea rows="10" cols="55" maxlength="1500" autofocus></textarea><br>
+      </div>
+      <div class="submit_feet">
+          <input type="submit" value="Valider"/>
+      </div>
+    </div>
+  </form>
 </body>
