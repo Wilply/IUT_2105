@@ -40,7 +40,7 @@ if ($img_type != "image") {
   $isOk = false;
 };
 
-/*
+
 echo $nom."<Br>";
 echo $prix."<Br>";
 echo $short_descri."<Br>";
@@ -51,11 +51,12 @@ echo $img_dir."<Br>";
 echo $img_size."<Br>";
 echo $img_error_code."<Br>";
 echo $img_extension."<Br>";
-*/
+
 
 #test si le dossier d upload existe ou le creer
-if (!file_exists("./upload/image") or is_file("./upload/image")) {
-
+if (!file_exists("./upload/images")) {
+  echo 'Le dossier n existe pas<Br>';
+  #header('Location: fail.html');
 };
 
 if ($img_error_code == 0 && $isOk) {
@@ -63,7 +64,7 @@ if ($img_error_code == 0 && $isOk) {
     header('Location: fail.html');
   };
   $id = md5(uniqid(rand(), true));
-  $nom_local = "./upload/image/".$id.".".$img_extension;
+  $nom_local = "upload/images/".$id.".".$img_extension;
   $isUpload = move_uploaded_file($img_dir,$nom_local);
   if ($isUpload) {
     echo "c est upload";

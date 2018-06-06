@@ -28,14 +28,14 @@
 	/*width: 38%;
 	height: 50%;*/
 	width: 450px;
-	height: 610px;
-  top: 45%;
-  left: 59%;
-  /*transform: translate(-50%, -40%);*/
-  box-shadow: 5px 5px 10px;
-  border-radius: 5px;
-  padding: 5px;
-  flex-direction: column;
+	height: 645px;
+  	/*top: 45%;
+  	left: 59%;
+  	/*transform: translate(-50%, -40%);*/
+  	box-shadow: 5px 5px 10px;
+  	border-radius: 5px;
+  	padding: 5px;
+  	flex-direction: column;
 }
 
 .login_head {
