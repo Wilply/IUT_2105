@@ -34,7 +34,13 @@
 			<div class="article_main">
 				<div class="article_top_tab">
 					<div class="article_page_img">
-						<img class="article_image" <?php echo 'src="'.$image.'"'; ?> >
+						<img class="article_image" <?php 
+						if ($image != "") {
+							echo 'src="'.$image.'"'; 
+						} else {
+							echo 'src="no_img.png"';
+						}
+						?> >
 					</div>
 					<div class="article_short_descri">
 						<p class="article_name"><?php 
