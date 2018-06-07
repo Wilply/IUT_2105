@@ -1,10 +1,20 @@
 <?php
-	/*if (!isset($_GET['article_id'])) {
+	session_start();
+
+	if (!isset($_GET['article_id'])) {
 		header("Location: index.php");
-	};*/
+	};
 
 	$id_article = $_GET['article_id'];
 	$db_connect = mysqli_connect("localhost", "u_clecoq001", "YwYL3tnj", "db_clecoq001");
+
+	$req_row = "SELECT product_id FROM products";
+	$row_number = mysqli_num_rows(mysqli_query($db_connect, $req_row));
+
+	if ($id_article < 1 or $id_article > $row_number) {
+		header("Location: index.php");
+	};
+
 	$sql_query = "SELECT * FROM products WHERE product_id = ".$id_article;
 	$result = mysqli_fetch_array(mysqli_query($db_connect, $sql_query));
 	
