@@ -3,21 +3,21 @@ $db_connect = mysqli_connect("localhost", "u_clecoq001", "YwYL3tnj", "db_clecoq0
 
 for ($i=1; $i < 10; $i++) {
 
-$id_produit = $i;
+  $id_produit = $i;
 
-$req_produit = "SELECT * FROM products WHERE product_id =".$id_produit;
-$produit = mysqli_fetch_array(mysqli_query($db_connect, $req_produit));
+  $req_produit = "SELECT * FROM products WHERE product_id =".$id_produit;
+  $produit = mysqli_fetch_array(mysqli_query($db_connect, $req_produit));
 
-$img = $produit[5];
-$prix = $produit[2];
-$descri = $produit[3];
-$nom = $produit[1];
-?>
-<div class="article" onclick="location.href='article.php';" style="cursor: pointer;">
+  $img = $produit[5];
+  $prix = $produit[2];
+  $descri = $produit[3];
+  $nom = $produit[1];
+
+echo "<div class=\"article\" onclick=\"location.href='article.php?article_id=".$id_produit."';\" style=\"cursor: pointer;\">";?>
   <div class="article_list_left">
-      <?php if ($img) {
-        echo $img;
-        echo "<img classe=\"article_image\" src=\"".$img."\" >";
+      <?php if (isset($img)) {
+        #echo $img;
+        echo "<img class=\"article_image\" src=\"".$img."\" >";
       } else {?>
         <img class="article_image" src="no_img.png">
       <?php }; ?>

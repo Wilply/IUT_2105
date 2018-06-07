@@ -99,7 +99,7 @@
 	if($isOk) {
 		insert_db($login, $nom, $prenom, $password, $email, $db_connect);
 		#echo '<Br>insert succesful';
-		header('Location: succes.html');
+		header('Location: index.php');
 		exit();
 	} else {
 		#echo '<Br>insert failed';

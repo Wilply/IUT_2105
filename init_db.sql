@@ -46,7 +46,7 @@ CREATE TABLE products (
   product_price DECIMAL(8,2) NOT NULL,
   product_short_description TEXT,
   product_description TEXT,
-  product_img VARCHAR(30),
+  product_img VARCHAR(50),
   product_sub_cat INT,
   CONSTRAINT products_key PRIMARY KEY(product_id),
   CONSTRAINT products_foreign_sub_cat FOREIGN KEY(product_sub_cat) REFERENCES sub_categories(subcat_id)

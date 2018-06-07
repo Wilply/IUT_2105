@@ -4,6 +4,8 @@
 }
 
 .main {
+	background-color: #F9F9F9;
+	font-family: Verdana, Arial, sans-serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -70,6 +72,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
+	min-width: 890px;
 	height: 10%;
 	min-height: 87px;
 	/*background-color: #FF0000;*/
@@ -168,7 +171,7 @@
 
 .search_input {
 	width: 85%;
-    height: 35px;
+    height: 33px;
     /*border-color: #000000;
     border-style: none;
     border-right-style: inset;
@@ -190,7 +193,7 @@
 	background-size: cover;
 	background-color: #E5E5E5;
     width: 35px;
-    height: 35px;
+    height: 37px;
     /*border-color: #000000;*/
     border-style: outset;
     border-width: 1px;
@@ -275,7 +278,7 @@
 	border-top-width: 2px;
 }
 
-/* #### ARTICLE #### */
+/* #### ARTICLE LIST #### */
 .article_list {
 	display: flex;
 	flex-direction: column;
@@ -310,8 +313,8 @@
 }
 
 .article_image {
-	height: 80%;
-	width: 100%;
+	min-height: 100%;
+	min-width: 100%;
 }
 
 .article_list_price {
@@ -327,4 +330,83 @@
 	margin: 2%;
 	padding-left: 2%;
 }
-/* #### ARTICLE #### */
+/* #### FIN ARTICLE LIST #### */
+
+/* #### PAGE ARTICLE #### */
+
+.article_main {
+	margin-top: 20px;
+	margin-right: 15px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	background-color: #7f81a3;
+	height: 60%;
+	min-height: 480px;
+	width: 75%;
+	min-width: 600px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.article_top_tab {
+	display: flex;
+	height: 40%;
+	width: 100%;
+	padding: 10px;
+}
+
+.article_page_img {
+	display: flex;
+	height: 100%;
+	width: 180px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+
+.article_short_descri {
+	padding-left: 15px;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	height: 100%;
+	width: 70%;
+	/*background-color: #FFFFFF;*/
+	margin-left: 5px;
+}
+
+.article_name {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin: 0px;
+	margin-top: 10px;
+	padding: 0px;
+}
+
+.article_short {
+	font-size: .9em;
+	margin: 0px;
+	margin-top: 15px;
+	padding: 0px;
+}
+
+.article_bottom_tab {
+	border-style: solid;
+	border-width: 2px;
+	padding: 5px;
+	display: block;
+	flex: 1;
+	/*background-color: #;*/
+	margin: 10px;
+	margin-top: 0px;
+}
+
+.article_bottom_tab h3{
+	margin: 0%;
+	margin-top: 5px;
+}
+
+.article_bottom_tab p{
+	margin: 0%;
+	margin-top: 8px;
+}
+
+/* #### FIN PAGE ARTICLE #### */
