@@ -22,8 +22,10 @@
 	function wait_or_valid($bool) {
 		if ($bool == 0) {
 			$res = 'En attente';
-		} else {
+		} elseif ($bool == 1) {
 			$res = 'Validé';	
+		} elseif ($bool == -1) {
+			$res = 'Annulé';
 		};
 		return $res;
 	}
@@ -42,7 +44,7 @@
 		$req_commande = 'SELECT commande_id, comment, sum(quantite*product_price), statut FROM commandes, products WHERE commandes.product_id = products.product_id AND commande_id='.$i;
 
 		$res_commande = mysqli_fetch_array(mysqli_query($db_connect, $req_commande));
-		echo '<tr class="commande_list_row" onclick="window.location=\'commande_detail?commande_id='.$i.'\';">';
+		echo '<tr class="commande_list_row" onclick="window.location=\'commande_detail.php?commande_id='.$i.'\';">';
 		echo '<td id="commande_list_id">'.$res_commande[0].'</td>';
 		echo '<td id="commande_list_comment">'.$res_commande[1].'</td>';
 		echo '<td id="commande_list_price">'.$res_commande[2].' € </td>';

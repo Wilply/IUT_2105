@@ -645,3 +645,62 @@
 }
 
 /* #### FIN COMMANDE LIST #### */
+
+/* #### COMMANDE DETAIL #### */
+
+.commande_detail_main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.commande_detail_list {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #DDDDDD;
+	flex-grow: 1;
+	max-width: 1000px;
+	margin-right: 5%;
+	margin-left: 3%;
+	margin-top: 2%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #878787;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 40px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.commande_detail_one {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	line-height: 200%;
+}
+
+.commande_detail_left {
+	flex-grow: 1;
+
+}
+
+.commande_detail_right {
+	align-self: flex-end;
+}
+
+#commande_detail_last {
+	margin-bottom: 20px;
+}
+
+#commande_separator {
+	margin-top: 30px;
+}
+
+.commande_detail_form {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+/* #### FIN COMMANDE DETAIL #### */

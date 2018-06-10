@@ -40,12 +40,12 @@ $comment = 'Commande passé par '.$_SESSION['login'].' le '.getdate()['mday'].'/
 for ($i = 0; $i < count($panier); $i++) {
 	$id = $panier[$i][0];
 	$quantite = $panier[$i][1];
-	$req_add_commande = 'INSERT INTO commandes VALUES("'.$last_id.'","'.$id.'","'.$quantite.'","'.$user_id.'",false,"'.$comment.'")';
+	$req_add_commande = 'INSERT INTO commandes VALUES("'.$last_id.'","'.$id.'","'.$quantite.'","'.$user_id.'","0","'.$comment.'")';
+	echo $req_add_commande.'<Br>';
 	$res = mysqli_query($db_connect, $req_add_commande);
 	/*if ($res) {
 		echo '<Br>OUI<Br>';
 	}*/
-	#echo $req_add_commande;
 }
 
 if ($res) {
