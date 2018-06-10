@@ -11,11 +11,10 @@
 		<?php include 'header.php'; ?>
 		<div class="corps">
 			<?php include 'menu.php'; ?>
-			<!--<div class="article">-->
 		<div class="article_list">
 			<?php include 'article_processing.php'; ?>
 		</div>
-			<!--</div>-->
+			<?php include 'panier.php'; ?>
 		</div>
 		<div class="footer">
 

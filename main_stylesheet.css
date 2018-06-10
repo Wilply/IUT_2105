@@ -287,7 +287,7 @@
 .article_list {
 	display: flex;
 	flex-direction: column;
-	flex: 1;
+	flex-grow: 1;
 	margin-right: 5%;
 }
 
@@ -347,9 +347,9 @@
 	flex-wrap: nowrap;
 	background-color: #7f81a3;
 	height: 60%;
-	min-height: 480px;
+	min-height: 600px;
 	width: 75%;
-	min-width: 600px;
+	min-width: 500px;
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 }
 
@@ -370,7 +370,7 @@
 .article_short_descri {
 	padding-left: 15px;
 	display: flex;
-	flex: 1;
+	flex: 2;
 	flex-direction: column;
 	height: 100%;
 	width: 70%;
@@ -414,4 +414,85 @@
 	margin-top: 8px;
 }
 
+.article_price_panier {
+	display: flex;
+	width: 25%;
+	max-width: 200px;
+	height: 100%;
+	flex-direction: column;
+	margin-right: 20px;
+	padding-left: 25px;
+	border-style: solid;
+	border-width: 3px;
+	background-color:  #e3f1f7;
+}
+
+.article_price {
+	margin-top: 20%;
+}
+
+#quantite {
+	width: 20%;
+}
+
+#submit_button {
+	margin-top: 10%;
+	width: 90%;
+}
 /* #### FIN PAGE ARTICLE #### */
+
+/* #### PAGE PANIER #### */
+.panier_main {
+	display: flex;
+	flex-direction: column;
+	min-width: 165px;
+	width: 25%;
+	max-width: 210px;
+	min-height: 100%;
+	overflow: auto;
+	align-items: left;
+	/*background-color: #512d55;*/
+	margin-top: 1.4%;
+	margin-right: 1%;
+}
+
+.panier_list {
+	display: block;
+	background-color: #DDDDDD;
+	padding-left: 15%;
+	padding-top: 10px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-right-style: solid;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+
+}
+
+.panier_total {
+	display: block;
+	background-color: #DDDDDD;
+	padding-left: 15%;
+	padding-top: 10px;
+	border-left-style: solid;
+	border-right-style: solid;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.panier_valider {
+	display: block;
+	background-color: #DDDDDD;
+	padding-left: 15%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 15%;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+#valider_form {
+	margin: 0px;
+	padding: 0px;
+}
+/* #### FIN PAGE PANIER #### */

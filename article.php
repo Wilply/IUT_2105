@@ -61,7 +61,17 @@
 						?></p>
 					</div>
 					<div class="article_price_panier">
-
+						<div class="article_price">
+						<?php 
+							echo 'Prix unitaire: <Br>'.$prix.' euros';
+						?>
+						</div>
+						<form method="POST" action="add_panier.php">
+							<p>Quantité : <input id="quantite" type="number" name="quantite" value="0"></p>
+							<input id="submit_button" type="submit" name="submit_button" value="Ajouter au Panier">
+							<input type="hidden" name="previous_page" value=<?php echo $_SERVER['REQUEST_URI'];?>>
+							<input type="hidden" name="product_id" value=<?php echo $id_article;?>>
+						</form>
 					</div>
 				</div>
 				<div class="article_bottom_tab">
@@ -71,6 +81,7 @@
 					?></p>
 				</div>
 			</div>
+				<?php include 'panier.php'; ?>
 			<div class="footer">
 
 			</div>
