@@ -46,8 +46,8 @@ function get_name_price($id, $db) {
 		</div>
 		<form class="article_detail_button">
 			<span id="article_detail_valider_text">Valider la commande ?</span>
-			<input type="submit" value="Valider">
-			<input type="submit" value="Abandonner">
+			<input type="submit" value="Valider" formaction="add_commande.php">
+			<input type="submit" value="Abandonner" formaction="reset_panier.php">
 		</form>
 	</div>
 </div>

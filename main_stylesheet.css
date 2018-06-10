@@ -260,6 +260,8 @@
 	margin-left: 5px;
 	padding: 0%;
 	border-style: none;
+	text-decoration: none;
+	color: #474747;
 }
 
 .sub_cat {
@@ -576,3 +578,22 @@
 	flex-grow: 1;
 }
 /* #### FIN DETAIL PANIER #### */
+
+/* #### PANEL INFO #### */
+
+.panel_info {
+	background-color: #DDDDDD;
+	border-style: solid;
+	border-color: #878787;
+	width: 320px;
+	height: 280px;
+  	box-shadow: 5px 5px 10px;
+  	flex-direction: column;
+  	line-height: 250%;
+  	padding-top: 20px;
+  	padding-left: 20px;
+  	margin-top: 2%;
+  	margin-left: 5%;
+}
+
+/* #### FIN PANEL INFO #### */
