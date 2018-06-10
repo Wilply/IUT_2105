@@ -3,7 +3,15 @@
 		header("Location: ./");
 	};
 
-	#AJOUTER UN TRUC POUR EMPECHER UN NON ADMIN D4ACCEDER A CETTE PAGE
+	$db_connect = mysqli_connect("localhost", "u_clecoq001", "YwYL3tnj", "db_clecoq001");
+
+	$req_isAdmin = 'SELECT user_is_admin FROM users WHERE user_login="'.$_SESSION['login'].'"';
+
+	$userisAdmin = mysqli_fetch_array(mysqli_query($db_connect, $req_isAdmin))[0];
+
+	if ($userisAdmin == 0) {
+		header('Location: ./');
+	};
 ?>
 <!DOCTYPE >
 <html>
@@ -21,7 +29,7 @@
 					<a href="./admin_panel.php?page=2"><p class="prim_text">INFO</p></a>
 				</div>
 				<div class="prim_cat">
-					<a href="./admin_panel.php?page=#"><p class="prim_text">COMMANDES</p></a>
+					<a href="./admin_panel.php?page=3"><p class="prim_text">COMMANDES</p></a>
 				</div>
 				<div class="prim_cat">
 					<p class="prim_text">PRODUITS</p>
@@ -55,6 +63,9 @@
 					case 2:
 						include 'info.php';
 						break;
+					case 3:
+						include 'commande_list.php';
+						break;
 					case 'value':
 
 						break;
@@ -64,7 +75,7 @@
 						break;
 				}
 			} else {
-				include 'infophp.php';
+				include 'info.php';
 			};
 			 ?>
 		</div>

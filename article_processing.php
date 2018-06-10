@@ -1,7 +1,11 @@
 <?php
 $db_connect = mysqli_connect("localhost", "u_clecoq001", "YwYL3tnj", "db_clecoq001");
 
-for ($i=1; $i < 10; $i++) {
+$req_last_produit = "SELECT product_id FROM products ORDER BY product_id DESC";
+
+$last_id = mysqli_fetch_array(mysqli_query($db_connect, $req_last_produit))[0];
+
+for ($i=1; $i <= $last_id; $i++) {
 
   $id_produit = $i;
 

@@ -597,3 +597,51 @@
 }
 
 /* #### FIN PANEL INFO #### */
+
+/* #### COMMANDE LIST #### */
+
+.commande_list_table {
+	 border-collapse: collapse;
+	 border-style: solid;
+	 border-width: 3px;
+	 background-color: #DDDDDD;
+	 margin-left: 2%;
+	 margin-top: 2%;
+}
+
+.commande_list_row {
+	border-style: solid;
+	border-width: 2px;
+}
+
+.commande_list_row:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.commande_list_table td{
+	border-style: solid;
+	border-width: 2px;
+	padding-right: 15px;
+	padding-left: 7px;
+	text-align: center;
+}
+
+#commande_list_id {
+	text-align: left;
+}
+
+#commande_list_comment {
+	text-align: left;
+}
+
+#commande_list_price {
+	text-align: right;
+	padding-left: 20px;
+}
+
+#commande_list_status {
+	text-align: left;
+}
+
+/* #### FIN COMMANDE LIST #### */

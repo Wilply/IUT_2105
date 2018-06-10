@@ -11,11 +11,12 @@ session_start();
 
 	$quantite = $_POST['quantite'];
 	$id_prod = $_POST['product_id'];
-	echo $id_prod."<Br>";
-	echo $quantite;
+	/*echo $id_prod."<Br>";
+	echo $quantite;*/
 	if ($quantite > 0) {
 		$add_panier = array($id_prod, $quantite);
 		$_SESSION['panier'][] = $add_panier;
 	};
-	header('Location: '.$_POST['previous_page'])
+	#header('Location: '.$_POST['previous_page']);
+	header('Location: ./');
 ?>

@@ -61,8 +61,9 @@ CREATE TABLE commandes (
   product_id INT NOT NULL,
   quantite INT NOT NULL,
   client INT NOT NULL,
+  statut BOOLEAN NOT NULL,
   comment VARCHAR(250),
-  CONSTRAINT commandes_key PRIMARY KEY(commande_id),
+  #CONSTRAINT commandes_key PRIMARY KEY(commande_id),
   CONSTRAINT commandes_foreign_key_products FOREIGN KEY(product_id) REFERENCES products(product_id)
 );
 
