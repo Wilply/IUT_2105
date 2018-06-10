@@ -21,15 +21,15 @@ echo "<div class=\"article\" onclick=\"location.href='article.php?article_id=".$
       } else {?>
         <img class="article_image" src="no_img.png">
       <?php }; ?>
-    <div class="article_list_price">
-      Prix : <Br>
-      <?php echo $prix; ?>
-      euros
-    </div>
   </div>
   <div class="article_list_right">
     <p class="article_list_name"><?php echo $nom; ?></p>
     <p class="article_list_short_description"><?php echo $descri; ?></p>
   </div>
+    <div class="article_list_price">
+      Prix unitaire : <Br>
+      <?php echo $prix; ?>
+      euros
+    </div>
 </div>
 <?php }; ?>
