@@ -37,6 +37,12 @@
 					case 3:
 						include 'commande_list.php';
 						break;
+					case 4:
+						include 'add_cat.php';
+						break;
+					case 5:
+						include 'gerer_prod.php';
+						break;
 					case 'value':
 
 						break;

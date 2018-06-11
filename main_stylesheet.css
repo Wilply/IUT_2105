@@ -245,6 +245,7 @@
 	border-color: #878787;
 	border-width: 3px;
 	border-top-width: 0px;
+	cursor: pointer;
 }
 
 #first_prim {
@@ -704,3 +705,57 @@
 }
 
 /* #### FIN COMMANDE DETAIL #### */
+
+/* #### ADD CATEGORIES #### */
+
+.add_cat_main {
+	display: flex;
+	flex-direction: column;
+	width: 295px;
+	height: 450px;
+	margin-top: 2%;
+	margin-left: 2%;
+	padding: 20px;
+	padding-left: 45px;
+	padding-right: 20px;
+	background-color: #FFFFFF;
+	line-height: 200%;
+	box-shadow: 5px 5px 10px;
+  	border-radius: 5px;
+}
+
+.add_cat_main h1 {
+	font-size: 1.6em;
+	margin: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#add_cat_valider {
+	margin-top: 10px;
+}
+
+/* #### FIN ADD CATEGORIES #### */
+
+/* #### GERER PROD #### */
+
+.gerer_prod_main {
+	display: flex;
+	flex-direction: row;
+	line-height: 200%;
+	box-shadow: 5px 5px 10px;
+  	border-radius: 5px;
+  	background-color: #FFFFFF;
+  	margin-top: 2%;
+	margin-left: 2%;
+	padding: 20px;
+	padding-left: 35px;
+	padding-right: 35px;
+	height: 55px;
+}
+
+.gerer_prod_main input {
+	margin-top: 5px;
+}
+
+/* #### FIN GERER PRODç #### */

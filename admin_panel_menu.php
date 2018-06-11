@@ -8,7 +8,7 @@
 	<div class="prim_cat">
 		<p class="prim_text">PRODUITS</p>
 		<div class="sub_cat">
-			<a href="./admin_panel.php?page=#">GERER</a>
+			<a href="./admin_panel.php?page=5">GERER</a>
 			<a href="./admin_panel.php?page=1">AJOUTER</a>
 			<!--<a href="./admin_panel.php?page=#">SUPPRIMER</a>-->
 		</div>
@@ -16,7 +16,7 @@
 	<div class="prim_cat">
 		<p class="prim_text">CATEGORIES</p>
 		<div class="sub_cat">
-			<a href="./admin_panel.php?page=#">AJOUTER</a>
+			<a href="./admin_panel.php?page=4">AJOUTER</a>
 			<!--<a href="./admin_panel.php?page=#">SUPPRIMER</a>-->
 		</div>
 	</div>
