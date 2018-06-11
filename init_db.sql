@@ -15,7 +15,7 @@ DROP TABLE IF EXISTS users;
 
 CREATE TABLE users(
   user_id INT NOT NULL AUTO_INCREMENT,
-  user_login VARCHAR(10) NOT NULL,
+  user_login VARCHAR(30) NOT NULL,
   user_name VARCHAR(30) NOT NULL,
   user_surname VARCHAR(40) NOT NULL,
   user_password VARCHAR(100) NOT NULL,

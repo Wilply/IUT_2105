@@ -18,7 +18,7 @@
 	$user_mail = $user[5];
 	$user_isAdmin = $user[6];
 
-	if ($user_isAdmin = 0) {
+	if ($user_isAdmin == 0) {
 		$user_isAdmin = 'non';
 	} else {
 		$user_isAdmin = 'oui';
