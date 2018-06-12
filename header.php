@@ -1,7 +1,7 @@
 <div class="header">
   <a href="../projet/" class="logo" ><img class="image" src="logoUPPA.png"></a>
-  <form class="search_bar" action="search.php">
-    <input type="text" name="search" class="search_input">
+  <form class="search_bar" action="index.php">
+    <input type="text" name="search" class="search_input" value=<?php if (isset($_GET['search'])) {echo '"'.$_GET['search'].'"';}; ?>>
     <button type="submit" class="search_button"></button>
   </form>
   <?php

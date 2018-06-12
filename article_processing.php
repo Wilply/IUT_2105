@@ -9,8 +9,10 @@ for ($i=1; $i <= $last_id; $i++) {
 
   $id_produit = $i;
 
-  if (!isset($_GET['cat']) and !isset($_GET['subcat'])) {
+  if (!isset($_GET['cat']) and !isset($_GET['subcat']) and !isset($_GET['search'])) {
     $req_produit = "SELECT * FROM products WHERE product_id =".$id_produit;
+  } elseif (isset($_GET['search'])) {
+    $req_produit = 'SELECT * FROM products WHERE product_name LIKE "%'.$_GET['search'].'%" AND product_id = "'.$id_produit.'"';
   } elseif (isset($_GET['subcat'])) {
     $req_produit = "SELECT * FROM products WHERE product_id =".$id_produit.' AND product_sub_cat = '.$_GET['subcat'];
   } elseif (isset($_GET['cat'])) {
