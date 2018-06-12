@@ -1,8 +1,8 @@
-<?php 
+<?php
   #session_start();
-  if (!isset($_SESSION['login'])) {
+  /*if (!isset($_SESSION['login'])) {
     header("Location: ./");
-  };
+  };*/
 
   $db_connect = mysqli_connect("localhost", "u_clecoq001", "YwYL3tnj", "db_clecoq001");
 

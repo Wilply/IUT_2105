@@ -1,4 +1,4 @@
-<?php 
+<?php
   session_start();
   if (!isset($_SESSION['login'])) {
     header("Location: ./");
@@ -22,7 +22,7 @@
     header('Location: admin_panel.php?page=4');
   }
 
-  $res = mysqli_query($req);
+  $res = mysqli_query($db_connect, $req);
 
   if ($res) {
     header('Location: admin_panel.php?page=4');
