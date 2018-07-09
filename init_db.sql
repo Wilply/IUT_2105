@@ -1,6 +1,11 @@
 #script de creation et d initialisation de la base de donnée
 #pour lancer le script: source init_db.sql
 
+USE mysql;
+CREATE USER 'u_clecoq001'@'localhost' IDENTIFIED BY 'YwYL3tnj';
+GRANT ALL PRIVILEGES ON * . * TO 'u_clecoq001'@'localhost';
+FLUSH PRIVILEGES;
+
 DROP DATABASE IF EXISTS db_clecoq001;
 
 CREATE DATABASE db_clecoq001;
